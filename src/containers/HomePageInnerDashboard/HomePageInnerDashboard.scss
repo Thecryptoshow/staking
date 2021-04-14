@@ -1,0 +1,377 @@
+.card-list{
+    &.mainArae{
+        @media(min-width:600px){
+             margin-top:15px;
+        }
+       
+    }
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 9 ;
+     justify-content: space-between;
+     margin-bottom: 7px;
+     flex-direction: column;
+     @media only screen and (min-width: 1024px) {
+        // margin-bottom: 15px;
+        flex-direction: row;
+    }
+    .card-item{
+        background: #FFFFFF;
+        border: 0.5px solid #008FFF;
+        border-radius: 7.75px 7.75px 0px 0px;
+        width: 100%;         
+        align-self: baseline;
+        margin-bottom: 15px;
+        @media only screen and (min-width: 1024px) {
+            &.totalValueLocked{
+                position: relative;
+                top: -11px;
+            }
+            &.showPrice{
+                position: relative;
+                top:-26px;
+                border-radius: 7.75px 7.75px 0px 0px !important;
+            }
+            &.move-up{
+                position: relative;
+                top: -140px;
+                border-radius: 7.75px 7.75px 0px 0px;
+                &.poolUp{
+                    top:-139px;
+                    border-radius: 7.75px 7.75px 0px 0px;
+                }
+            }
+            flex: 0 0 32.4%;
+            max-width: 32.4%;  
+            &.minting-start{
+                flex: 0 0 66.2222%;
+                max-width: 66.2222%;    
+                .card-item-price.ms{
+                    flex-direction: row !important;
+                    justify-content: space-between;
+                    h2{
+                        font-size: 34px;
+                    }
+                    div{
+                        min-width: 45%;
+                        // min-width: 37%;
+                        padding: 0 1rem;
+                        button{
+                            height: 42px;
+                            font-weight: 600;
+                            font-size: 16px; 
+                            margin-bottom: 2px;
+                        }
+                        &.block2{
+                            text-align: right;
+                            align-self: flex-end;
+                            color: #5D5D5D;
+                            font-size: 12px;
+                        }
+                    }
+                }   
+            }
+        }
+        @media only screen and (min-width:1340px) {
+            &.move-up{
+                position: relative;
+                top: -139px;
+            }
+        }
+      
+      
+        .v2logo{
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid #008FFF;
+            margin-bottom: 10px;
+            height: 61px;
+            &.leftBox{
+                float: left;
+                border-bottom: none;
+                position: relative;
+                left: 30px;
+            }
+            @media only screen and (min-width: 1024px) {
+                margin-bottom: 6px;     
+                padding: 9px 15px;           
+            }
+            
+            img{
+                width: 40px;
+                &.withBGN{
+                    width: 61px;
+                }   
+                &.one{
+                    animation: bounce 2s infinite;
+                    animation-delay:1s;
+                }
+                &.two{
+                    animation: bounce 3s infinite;
+                    animation-delay:3s;
+                }
+                &.three{
+                    animation: bounce 4s infinite;
+                    animation-delay:5s;
+                }
+                @media only screen and (min-width: 1024px) {
+                    width: 45px;      
+                    &.withBGN{
+                        width: 65px;  
+                    }   
+                }
+            }         
+
+        }
+        .card-item-details{
+            .card-item-price{
+                margin-bottom: 10px;
+                h2.priceHeader{
+                    margin: 8px 0;
+                    margin-top: 2px;
+                }
+                .border-top{
+                    border-top: 1px  solid #75AEFF;
+                    margin: 25px 0 20px;
+                }
+                .infodetailsUi{
+                    ul{
+                        margin: 0;
+                        padding: 0 10%;
+                        margin-top: 10px;
+
+                        li{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: 10px 0;
+
+                            .border-ui{
+                                // flex: 1;
+                                border-top: 1px  dashed #008FFF;
+                                height: 1px;
+                                margin: 0 10px;
+                                // max-width:150px;
+                                
+                                animation-duration: 5s;
+                                animation-fill-mode:both;
+                                animation-name: border-animate;
+                              
+                            }
+                            .namev{
+                                color: #5D5D5D;
+                                font-size: 15px;
+                            }
+                            .value{
+                                color: #202A43;
+                                font-size: 15px;
+                                font-weight: 600;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                            &:first-child{
+                                .namev{
+                                    color: #5D5D5D;
+                                    font-size: 22px;
+                                }
+                                .value{
+                                    color: #202A43;
+                                    font-size: 22px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+
+                }
+                @media only screen and (min-width: 1024px) {
+                    margin-bottom: 16px;
+                }
+                h6{
+                    color: #008FFF;
+                    margin: 0;
+                    font-size: 18px;
+                    text-align: center;
+                    font-weight: 400;
+                    @media only screen and (min-width: 1024px) {
+                        font-size: 22px;
+                    }
+                }
+                h5{
+                    color: #008FFF;
+                    margin: 0;
+                    font-size: 18px;
+                    text-align: center;
+                    font-weight:400;
+                    @media only screen and (min-width: 1024px) {
+                        font-size: 20px;
+                    }
+                }
+                h2{
+                    color: #000000;
+                    margin: 0;
+                    font-size: 30px;
+                    text-align: center;
+                    margin: 8px 0;
+                    font-weight: 700;
+                  
+                    @media only screen and (min-width: 980px) {
+                        font-size: 32px;
+                    }
+                    @media only screen and (min-width: 1100px) {
+                        font-size: 28px;
+                    }
+                }
+                h3{
+                    color: #757575;
+                    margin: 0;
+                    font-size: 16px;
+                    text-align: center; 
+                    @media only screen and (min-width: 1024px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .summery-card{
+                padding: 4px 16px;
+                margin: 14px;
+                border: 1px solid #008FFF;
+                border-radius: 7px;
+                padding-bottom: 23px;
+                margin-top: 14px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin: 7px 0;
+                    .card-d1{
+                        color: #202A43;
+                        font-size: 14px;
+                        font-weight: 300;
+                        @media screen and (max-width: 1366px) {
+                            font-size: 12px;
+                          }
+                        @media screen and (max-width: 1200px) {
+                            font-size: 10px;
+                          }
+                          @media screen and (max-width: 1023px) {
+                            font-size: 14px;
+                          }
+                          @media screen and (max-width: 1023px) {
+                            font-size: 12px;
+                          }
+                          @media screen and (max-width: 320px) {
+                            font-size: 11px;
+                          }
+                    }
+                    .card-d2 {
+                        color: #202A43;
+                        font-size: 14px;
+                        font-weight: 700;
+                        @media screen and (max-width: 1200px) {
+                            font-size: 10px;
+                          }
+                          @media screen and (max-width: 1023px) {
+                            font-size: 14px;
+                          }
+
+                          @media screen and (max-width: 320px) {
+                            font-size: 11px;
+                          }
+                    }
+                    .card-size {
+                        // width: 100px;
+                        // overflow: hidden;
+                        // text-overflow: ellipsis;
+                        // white-space: nowrap;
+                        // @media screen and (max-width: 320px) {
+                        //     width: 45px;
+                        // }
+                      
+                    }
+                    .arrow {
+                        background: #008FFF;
+                        height: 13px;
+                        width: 13px;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        margin-left: 3px;
+                        cursor: pointer;
+                    }
+                    .border{
+                        flex: 1;
+                        margin-left: 15px;
+                        margin-right: 5px;
+                        border: 0 !important;
+                        border-top: 1px dashed #008FFF !important;
+                    }
+                }
+            }
+            .footer-card{
+                padding: 14px;
+                &.total-value-footer{
+                    padding-top:0;
+                    padding-bottom: 12px;
+                }
+                .btn{
+                    height: 42px;
+                    font-weight:600;
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                    @media only screen and (min-width: 1024px) {
+                        height: 42px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        margin-bottom: 13px;
+                    }
+                    @media only screen and (max-width: 320px) {
+                        font-size: 14px;
+                        height: 39px;
+                    }
+                }
+            }
+            &.single-card{
+                .card-item-price{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    margin-bottom: 0;
+                    padding: 19px 11px;
+                    h2{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ 
+ 
+@keyframes bounce {
+	0%, 20%, 50%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-0px);}
+	60% {transform: translateY(-8px);}
+}
+
+@media screen and (max-width: 1023px){
+    .card-list .card-item .card-item-details .summery-card li .card-d2 {
+        font-size: 12px;
+    }
+}
+
+
+@keyframes border-animate {
+    0% {width:0;}
+    
+    100% { 
+        flex: 1; 
+        width: 100%;
+    }
+}
+
+.p-t-10{
+    padding-top:10px;
+}
