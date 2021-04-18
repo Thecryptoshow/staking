@@ -300,8 +300,7 @@ const Side = (props) => {
             .getReserves()
             .call()
             .then((res) => {
-              const showBNBPriceDollar = parseInt(res[1]) / parseInt(res[0]);
-              // console.log("showBNBPriceDollar", showBNBPriceDollar);
+              const showBNBPriceDollar = parseInt(res[0]) / parseInt(res[1]);
               dispatch({ key: "bnbPriceDollar", value: bnbPriceDollar });
               dispatch({
                 key: "showBNBPriceDollar",

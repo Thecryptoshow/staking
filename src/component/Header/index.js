@@ -611,7 +611,7 @@ class Header extends React.Component {
     localStorage.removeItem("accounts");
 
     this.hideConnectedModal();
-    //window.location.reload();
+    window.location.reload();
   }
 
   render() {
