@@ -3,7 +3,8 @@ function addComma(n, addDecimalPart = false) {
     return;
   }
 
-  let num = n;
+  let num = n.toString();
+  n = n.toString();
   let decimalPart = "";
   if (n.includes(".")) {
     num = n.split(".")[0];

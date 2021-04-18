@@ -124,9 +124,7 @@ class FarmHome extends React.Component {
     return (
       <React.Fragment>
         <div className="main-content">
-          <div className="image-placeholder ">
-            <img src={pandaPic} />
-          </div>
+          
         
           <div className="container-fluid pl-0 pr-0">
             <div className="row">

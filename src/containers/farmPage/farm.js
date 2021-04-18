@@ -1082,7 +1082,7 @@ class Farm extends React.PureComponent {
   }
 
   render() {
-    console.log( "value" ,(this.state.farmOf / this.state.totalFarms)*100)
+    //console.log( "value" ,(this.state.farmOf / this.state.totalFarms)*100)
     if (this.state.showErrorMsg) {
       setTimeout(() => {
         this.setState({ showErrorMsg: false });
@@ -1126,7 +1126,7 @@ class Farm extends React.PureComponent {
                 <h6>
                   <FormattedMessage id={"aprStake"} />
                 </h6>
-                <h2>{insertComma(this.props.APY_LP.toFixed(2))}%</h2>
+                <h2>{insertComma(this.props.APY_LP)}%</h2>
               </div>
               <div className="block-chip-right">
                 <ul>

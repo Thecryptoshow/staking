@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { Modal } from "react-bootstrap";
 import logo from "../../assets/images/show_token.png";
-import Countdown from "react-countdown";
+//import Countdown from "react-countdown";
 
-var launchDate = new Date("Sun, 21 Mar 2021 05:00:00 GMT").toUTCString();
-var currDate = new Date();
+//var launchDate = new Date("Sun, 21 Mar 2021 05:00:00 GMT").toUTCString();
+// var currDate = new Date();
 
-let daysDiff =
-  (new Date(launchDate).getTime() - currDate.getTime()) / (1000 * 60 * 60 * 24);
+// let daysDiff =
+//   (new Date(launchDate).getTime() - currDate.getTime()) / (1000 * 60 * 60 * 24);
 
-let hoursDiff = (daysDiff - parseInt(daysDiff)) * 24;
-let minDiff = (hoursDiff - parseInt(hoursDiff)) * 60;
-let secDiff = (minDiff - parseInt(minDiff)) * 60;
-let milisec = (secDiff - parseInt(secDiff)) * 1000;
+// let hoursDiff = (daysDiff - parseInt(daysDiff)) * 24;
+// let minDiff = (hoursDiff - parseInt(hoursDiff)) * 60;
+// let secDiff = (minDiff - parseInt(minDiff)) * 60;
+// slet milisec = (secDiff - parseInt(secDiff)) * 1000;
 
-const daysLeft = parseInt(daysDiff) * 24 * 60 * 60 * 1000;
-const hourLeft = parseInt(hoursDiff) * 60 * 60 * 1000;
-const minLeft = parseInt(minDiff) * 60 * 1000;
-const secLeft = parseInt(secDiff) * 1000;
-const dayLeft = daysLeft + hourLeft + minLeft + secLeft + milisec;
+// const daysLeft = parseInt(daysDiff) * 24 * 60 * 60 * 1000;
+// const hourLeft = parseInt(hoursDiff) * 60 * 60 * 1000;
+// const minLeft = parseInt(minDiff) * 60 * 1000;
+// const secLeft = parseInt(secDiff) * 1000;
+//const dayLeft = daysLeft + hourLeft + minLeft + secLeft + milisec;
 
 function NotificationDialog(props) {
   useEffect(() => {
@@ -56,49 +56,7 @@ function NotificationDialog(props) {
               TOKEN UPGRADE NOTIFICATION
             </div>
           </Modal.Title>
-          <div className="modal-content_">
-            <p>
-              Here we would like to sincerely draw your attention to the
-              announcements; considering the future upgrades and accommodations
-              of the decentralized NFT marketplace, our current SHOW v1.0 token
-              will need to be upgraded to the SHOW v1.5 token contract.
-            </p>
-
-            <h2>
-              <Countdown
-                date={new Date().getTime() + dayLeft}
-                renderer={renderer}
-              />
-            </h2>
-
-            <div style={{ color: "red" }}>
-              Please make sure to remove you LP before.
-            </div>
-
-            <h5>Here is what to do  </h5>
-            <ul className="listing-modal">
-              <li>
-                SHOW 1.0 Holder who is not creating SHOW/BNB LP in Pancake Swap.
-                You will automatically get SHOW v.1.5 at 3/21 UTC 05:00 AM. You
-                have time 24h to create new LP in PancakeSwap and stake them in
-                <a href="/"> xanshow.com</a>
-              </li>
-
-              <li>
-                SHOW 1.0 Holder who is creating SHOW/BNB LP in Pancake Swap.
-                Please remove your LP before 3/21 UTC 05:00 AM. then you will
-                automatically get SHOW v.1.5 at 3/21 UTC 05:00 AM. You have time
-                24h to create new LP in PancakeSwap and stake them in
-                <a href="/"> xanshow.com</a>
-              </li>
-            </ul>
-
-            <div className="full-details">
-            <a href="https://xanshownft.medium.com/show-token-upgrade-and-reschedule-of-staking-reward-ce81d7b3b923" target="_blank"> Full details about the topic is here: 
-                 Link</a>
-            </div>
-          </div>
-        </Modal.Body>
+          </Modal.Body>
       </Modal>
     </>
   );

@@ -188,7 +188,7 @@ class HomeChild extends React.PureComponent {
         console.log("total supply", typeof res, res);
         this.setState({
           // totalSupply: (parseInt(res) / Math.pow(10, 18)).toFixed(2),
-          totalSupply: 99000000,
+          totalSupply: 90000000,
           circulatingSupply: (parseInt(res) / Math.pow(10, 18)).toFixed(2),
         });
       })

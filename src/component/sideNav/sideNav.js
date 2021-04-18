@@ -151,7 +151,7 @@ const Side = (props) => {
   }, []);
 
   useEffect(() => {
-    //APR(props.contract, 3.99, 100, "LP");
+    APR(props.contract, 3.99, 100, "LP");
     APR(props.contract, 3.99, 100, "SHOW");
     if (count !== 0) {
       getStatsWithOutMetaMask();
@@ -263,11 +263,7 @@ const Side = (props) => {
                     APR_SHOW,
                     emissionRate: res,
                   });
-                  props.setAPYLp({
-                    APY_SHOW,
-                    APR_SHOW,
-                    emissionRate: res,
-                  });
+                  
                 } else {
                   const APY_SHOW = isNaN(APY) ? 0 : 0;
                   const APR_SHOW = isNaN(yearlyAPR) ? 0 : yearlyAPR;
@@ -276,11 +272,7 @@ const Side = (props) => {
                     APR_SHOW,
                     emissionRate: res,
                   });
-                  props.setAPYLp({
-                    APY_SHOW,
-                    APR_SHOW,
-                    emissionRate: res,
-                  });
+                  
                 }
                 // console.log(APY);
               // })
@@ -387,22 +379,19 @@ const Side = (props) => {
     }
   }
 
-  // setInterval(() => {
-  //   getStatsWithOutMetaMask();
-  // }, 6000);
-  //
-  setTimeout(() => {
-    if (
-      (props.location.pathname.includes("/market-") || props.location.pathname.includes("/item-sell")) || 
-      (props.location.pathname === "/" &&
-        window.innerWidth >= 930 &&
-        window.innerWidth <= 1120)
-    ) {
-      document.getElementById("mySidenav").classList.add("mobile-sidebar");
-    } else {
-      document.getElementById("mySidenav").classList.remove("mobile-sidebar");
-    }
-  }, 700);
+  
+  // setTimeout(() => {
+  //   if (
+  //     (props.location.pathname.includes("/market-") || props.location.pathname.includes("/item-sell")) || 
+  //     (props.location.pathname === "/" &&
+  //       window.innerWidth >= 930 &&
+  //       window.innerWidth <= 1120)
+  //   ) {
+  //     document.getElementById("mySidenav").classList.add("mobile-sidebar");
+  //   } else {
+  //     document.getElementById("mySidenav").classList.remove("mobile-sidebar");
+  //   }
+  // }, 700);
   return (
     <>
       <div id="overlay" onClick={handleClose} className="overlay"></div>
@@ -493,9 +482,7 @@ const Side = (props) => {
                   </span>
                 </NavLink>
               </li>
-            </OverlayTrigger>
-            {/* {selectedlink === "Market" && showToggleCommunity ? <MarketLinks />:null} */}
-            <MarketLinks cls={showToggleCommunity ? "show" : "hide"} />
+            </OverlayTrigger>            
             <OverlayTrigger
               placement="right"
               overlay={

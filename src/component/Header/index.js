@@ -62,8 +62,8 @@ import {
   getLpAllowance,
 } from "../../contractCalls/allowance";
 import WalletConnectProvider from "@walletconnect/web3-provider";
-import WalletConnect from "@walletconnect/client";
-import QRCodeModal from "@walletconnect/qrcode-modal";
+//import WalletConnect from "@walletconnect/client";
+//import QRCodeModal from "@walletconnect/qrcode-modal";
 
 const Web3 = require("web3");
 
@@ -683,7 +683,7 @@ class Header extends React.Component {
             viewBox="0 0 24 24"
             onClick={() => this.handleOpen()}
             width="24px"
-            color="textSubtle"
+            color="black"
             xmlns="http://www.w3.org/2000/svg"
             className="sc-bdfBwQ ewCGLh hamburger"
           >
