@@ -2,6 +2,7 @@ import "./App.scss";
 import "./mycss.scss";
 import React, { useState, useEffect } from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
+import { SoundContext } from "./context/sound";
 import HomePage from "./containers/HomePage/index";
 import HomePageInnerDashboard from "./containers/HomePageInnerDashboard";
 //import { Provider } from "react-redux";
@@ -51,6 +52,7 @@ function App(props) {
     setLang(props.language);
   }, [props.language]);
 
+  const { mute, toggleMute, loadingSound } = React.useContext(SoundContext);
   // let currentDateTime =
   //   new Date().getTime() - localStorage.getItem("lastVisit");
   // let difference = currentDateTime / (1000 * 60 * 60);
@@ -62,6 +64,13 @@ function App(props) {
 
   return (
     <div className="App">
+      <button className="float" onClick={() => toggleMute()}>
+        {mute ? (
+          <i className="fa mute fa-volume-mute"></i>
+        ) : (
+          <i className="fa mute fa-volume-up"></i>
+        )}
+      </button>
       <ReactNotification />
       <IntlProvider locale={language} messages={messages[language]}>
         {show ? (

@@ -1,0 +1,409 @@
+.crypto-show-title {
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.user-panel,
+.brand-link {
+  border-bottom: 1px solid #dddddd !important;
+}
+
+.content-wrapper {
+  background-image: url("../../dist/img/back.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.today-top,
+.last-jackpot,
+.earn-in-pool {
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  position: relative;
+}
+
+.today-top i,
+.last-jackpot i,
+.earn-in-pool i {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.today-top,
+.last-jackpot {
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+  height: 150px;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.earn-in-pool {
+  margin: 15px 0;
+  border: 2px solid #32ceee;
+  background-color: #58c4dc;
+  background-image: linear-gradient(#58c4dc, #32ceee, #c7b7e9);
+  display: block;
+  color: #000000;
+}
+
+.earn-in-pool span {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.today-top {
+  float: right;
+}
+
+.bottom-section {
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.26);
+}
+
+.question,
+.answer {
+  font-size: 32px;
+  padding: 15px;
+  border-radius: 15px;
+  line-height: 32px;
+}
+
+.answers {
+  margin-bottom: 30px;
+}
+
+.answer {
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+.answer:hover,
+.confirm:hover {
+  background-color: #eeeeee;
+}
+
+/* .answer:focus,
+.confirm:focus {
+  background-color: #58c4dc;
+  color: #ffffff;
+  border: 2px solid #3ba9be;
+} */
+
+.selected-btn {
+  background-color: #58c4dc !important;
+  color: #ffffff !important;
+  border: 2px solid #3ba9be !important;
+}
+
+.question {
+  border: 2px solid #3ba9be;
+  background-color: #58c4dc;
+  color: #ffffff;
+}
+
+.timer,
+.confirm,
+.players {
+  display: block;
+  font-size: 24px;
+  padding: 20px 15px 10px 15px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 15px auto;
+  width: 200px;
+  height: 80px;
+  line-height: 36px;
+}
+
+.players {
+  margin-bottom: 0;
+}
+
+.timer {
+  border: 2px solid red;
+}
+
+.confirm {
+  border: 2px solid green;
+}
+
+.players {
+  border: 2px solid blue;
+}
+
+.float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 75px;
+  right: 20px;
+  background-color: #ffffff;
+  border: 2px solid #58c4dc;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 9999;
+}
+
+.mute {
+  margin-top: 5px;
+  color: #58c4dc;
+}
+
+.connect-btn i {
+  color: blue;
+}
+
+.nav-link:focus {
+  background-color: #f9deb7 !important;
+  color: #58c4dc !important;
+}
+
+.sidebar a {
+  color: #58c4dc !important;
+}
+
+.main-sidebar {
+  background-color: #ffffff !important;
+}
+
+.brand-link .lg-title {
+  left: 23px;
+  background-color: blue;
+  border: 2px solid blue;
+  padding: 5px 15px 7px 15px;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.brand-link .sm-title {
+  left: 13px;
+  background-color: blue;
+  border: 2px solid blue;
+  padding: 5px 15px 7px 11px;
+  border-radius: 15px;
+  color: #ffffff;
+  margin-top: 2px;
+}
+
+.modal-wrapper {
+  text-align: center;
+  position: relative;
+  height: 560px;
+  /* background-color: red; */
+}
+
+.modal-wrapper .content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 250px;
+}
+
+.modal-wrapper h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  max-width: 200px;
+  margin: auto auto 15px auto;
+}
+
+.modal-wrapper p {
+  max-width: 200px;
+  margin: auto;
+  font-size: 24px;
+}
+
+.modal-wrapper .continue-btn {
+  margin: 15px auto auto auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border: 2px solid blue;
+  width: 150px;
+  font-size: 24px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  text-align: center;
+  height: 60px;
+}
+
+.continue-btn {
+  z-index: 100;
+}
+
+#template {
+  display: block;
+  margin: auto;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#crown {
+  width: 150px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+}
+
+.user-input-modal {
+  height: 500px;
+}
+
+/* Staking Pool Style Starts */
+
+.staking-pool-wrapper h1 {
+  color: blue;
+  text-align: center;
+}
+
+.staking-pool {
+  background-color: #85e9ff;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.staking-pool-btn {
+  margin-bottom: 15px !important;
+  width: 100%;
+  font-size: 18px;
+}
+
+.staking-pool .title {
+  text-align: center;
+}
+
+.staking-pool .crown {
+  width: 80px !important ;
+  position: relative !important;
+}
+
+.staking-pool h3 {
+  font-size: 20px;
+  color: blue;
+}
+
+.staking-pool h4 {
+  font-size: 20px;
+}
+
+.staking-pool .status {
+  color: orangered;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: block;
+  width: 150px;
+  margin: 15px auto auto auto;
+}
+
+#StakingPoolPopUp .modal-content {
+  background-color: #85e9ff;
+}
+
+#StakingPoolPopUp .content {
+  text-align: center;
+}
+
+#StakingPoolPopUp .content input {
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+#StakingPoolPopUp .content p {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+#StakingPoolPopUp .content .max {
+  background-color: blue;
+  padding: 5px 14px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* Staking Pool Style Ends */
+
+@media (min-width: 768px) {
+  .title-nav > .nav-item {
+    margin-left: 48px !important;
+  }
+
+  .today-top,
+  .last-jackpot {
+    width: 200px !important;
+  }
+
+  .answers {
+    margin-bottom: 0;
+  }
+
+  .earn-in-pool {
+    margin: 0;
+  }
+
+  .modal-wrapper {
+    height: 630px;
+  }
+
+  .timer,
+  .confirm,
+  .players {
+    margin: 34px auto;
+  }
+
+  .timer {
+    margin-top: 0;
+  }
+
+  .players {
+    margin-bottom: 0;
+  }
+
+  .staking-pool-btn {
+    width: 200px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .today-top,
+  .last-jackpot {
+    width: 300px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .timer,
+  .confirm,
+  .players {
+    margin: 12px auto;
+  }
+
+  .players {
+    margin-bottom: 0;
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
+import { SoundProvider } from "./context/sound";
 // import { IntlProvider } from "react-intl";
 // import { addLocaleData } from "react-intl";
 // import locale_en from "./translations/en.json";
@@ -35,7 +36,10 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <ConnectedRouter history={history}>
+        <SoundProvider>
         <App />
+        </SoundProvider>
+        
       </ConnectedRouter>
 
     </Provider>
