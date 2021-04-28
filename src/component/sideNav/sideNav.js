@@ -735,7 +735,7 @@ const Side = (props) => {
                 showToggleCommunity = false;
               }}
               target="_blank"
-              href="https://twitter.com"
+              href="https://twitter.com/The_CryptoShow"
             >
               <span>
                 <svg
@@ -832,7 +832,7 @@ function CommunityLinks() {
             }}
             className="nav-icon"
             target="_blank"
-            href="https://twitter.com/"
+            href="https://twitter.com/The_CryptoShow"
           >
             <span>
               <svg
@@ -886,7 +886,7 @@ function CommunityLinks() {
             }}
             className="nav-icon"
             target="_blank"
-            href="https://t.me/"
+            href="https://t.me/TheCryptoShow"
           >
             <span>
               <svg
