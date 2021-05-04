@@ -1561,7 +1561,7 @@ class Farm extends React.PureComponent {
               {this.props.selectedTab === "showbnb"
                 ? insertComma(
                     showActualValue(
-                      this.state.lpReward + this.state.farmRewards,
+                    this.state.farmRewards,
                       18,
                       "string"
                     ),
@@ -1569,7 +1569,7 @@ class Farm extends React.PureComponent {
                   )
                 : insertComma(
                     showActualValue(
-                      this.state.showReward + this.state.stakeRewards,
+                      this.state.showReward,
                       18,
                       "string"
                     ),
